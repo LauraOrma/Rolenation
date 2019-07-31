@@ -1,0 +1,21 @@
+<% include _headerPrincipal %>
+
+<% if (data){ %>
+<% for(let i=0; i < data.length; i++){ %>
+<div class="col-4 cardcharacter">
+    <div class="card">
+        <img src="<%= data[i].image_character %>" alt="Avatar" style="width:100%">
+        <div class="cardbody">
+            <h4 class="nombrepersonaje"><b><%= data[i].character_name %> </b></h4>
+            <div class="col razaylvl"><%= data[i].class%>  <%= data[i].race %> <br>  <%= data[i].alienation %><br> <%= data[i].gender %> <br> Level: <%= data[i].level %> </div>
+            <div class="botones">
+                <!-- <a href="#"><button class="button">SEE</button></a> -->
+                <a href="/character/edit/<%= data[i].id_character %>"><button class="button">EDIT</button></a>
+                <a href="/character/delete/<%= data[i].id_character %>"><button class="button">DELETE</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>
+<% } %>
+<% include _footerPrincipal %>

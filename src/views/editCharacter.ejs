@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Laura Ortega">
+    <link rel="stylesheet" href="/css/styleForm.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Role Nation</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="website">
+            <span class="titleweb"><a id="rolenation" href="/">RoleNation</a></span>
+        </div>
+        <div class="nav">
+            <ul class="menu web-site">
+                <li><a id="home" href="/">HOME</a></li>
+                <li> <a id="about" href="#">ABOUT US</a></li>
+                <li> <a id="universe" href="/profile">ROLE UNIVERSE</a></li>
+                <li> <a id="contact" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+    <h2 class="editer">Character EDIT</h2>
+    <p></p>
+    <form action="/character/update/<%= data.id_character %>" method="post">
+        <!-- Nombre personaje -->
+        <label>Character Name: </label>
+        <input type="text" name="character_name" value="<%= data.character_name %>" class="form-control" id="name"
+            placeholder="Your Character Name">
+        <div class="form-group">
+            <!-- alienamiento -->
+            <label>Alienation:</label>
+            <select class="selectpicker form-control" value="<%= data.gender %>" name="alienation" id="alin">
+                <option>Lawful Good</option>
+                <option>Neutral Good</option>
+                <option>Chaotic Good</option>
+                <option>Lawful Neutral</option>
+                <option>True Neutral</option>
+                <option>Chaotic Neutral</option>
+                <option>Lawful Evil</option>
+                <option>True Evil</option>
+                <option>Chaotic Evil</option>
+            </select>
+
+            <label>Gender:</label>
+            <select class="selectpicker form-control" value="<%= data.alienation %>" name="gender" id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <!-- raza -->
+            <label>Race:</label>
+            <select class="selectpicker form-control" value="<%= data.race %>" name="race" id="races">
+                <option>Human</option>
+                <option>Elf</option>
+                <option>Dwarf</option>
+                <option>Gnome</option>
+                <option>Halfling</option>
+                <option>Orc</option>
+                <option>Kobold</option>
+            </select>
+
+            <!-- class -->
+            <label>Class:</label>
+            <select class="selectpicker form-control" value="<%= data.class %>" name="class" id="class">
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Warlock</option>
+                <option>Wizard</option>
+            </select>
+
+            <!-- level character -->
+            <label>Level: </label>
+            <input type="text" class="form-control" value="<%= data.level %>" id="level" placeholder="Level"
+                name="level">
+
+
+        </div>
+        <button type="submit">Apply</button>
+    </form>
+    </div>
+
+</body>
+
+</html>

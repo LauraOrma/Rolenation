@@ -1,0 +1,125 @@
+body{
+    background-image: url("../img/edit2.jpg");
+    background-repeat: no-repeat;
+}
+.website{
+    margin-top: 18px;
+}
+.titleweb{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px;
+}
+.menu {
+    position: absolute;
+    font-size: 20px;
+    z-index: 9999;
+    top: 0;
+    right: 3%;
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: inline-flex;
+    margin: 40px;
+}
+
+#home{
+    border: 1px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#home, #about, #universe, #contact {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#home:hover{
+    color: #5878B5;
+}
+
+#about:hover{
+    color: #5878B5;
+}
+
+#universe:hover{
+    color: #5878B5;
+} 
+
+#contact:hover{
+    color: #5878B5;
+    
+}
+
+#rolenation{
+    text-decoration: none;
+    color:white;
+}
+
+ #rolenation:hover{
+    color: #5878B5;
+ }
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color:white;
+}
+
+#name{
+    width: 30%;
+}
+
+#alin{
+    width: auto;
+}
+
+#races{
+    width: auto;
+}
+
+#class{
+    width: auto;
+}
+
+#level, #gender, #image {
+    width: auto;
+}
+
+#str, #int, #car, #const{
+    width: 5%;
+}
+
+.builder {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.editer{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #BD3237;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid #BD3237;
+}
+
+button:hover {
+    background-color: #293D55;
+    color: white;
+
+}

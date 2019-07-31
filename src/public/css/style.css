@@ -1,0 +1,68 @@
+.container{
+    display: flex;
+}
+.add_character{
+    height: 540px;
+    width: 370px;
+
+}
+.add-character-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    width: 50%;
+}
+.user-characters{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+}
+
+.characters-description{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+}
+
+.card-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+}
+
+.cardcharacter {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    z-index: 10;
+}
+  
+  .cardcharacter:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .modify-character{  
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #240041;
+    font-size: 17px !important;
+  }
+
+  .delete-character{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(204, 61, 61);
+    font-size: 17px !important;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .btn-see{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px !important;
+    color: white;
+    background-color: #f18c8e;
+
+  }
+  .btn-see:hover{
+      color:white;
+      background-color: #305f72;
+  }
+  

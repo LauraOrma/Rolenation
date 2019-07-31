@@ -1,0 +1,95 @@
+<% include _header %>
+<div class="container-fluid"></div>
+<div class="website">
+    <span class="titleweb"><a id="rolenation" href="/">RoleNation</a></span>
+</div>
+<div class="nav">
+    <ul class="menu web-site">
+        <li><a id="home" href="/">HOME</a></li>
+        <li> <a id="about" href="#">ABOUT US</a></li>
+        <li> <a id="universe" href="/profile">ROLE UNIVERSE</a></li>
+        <li> <a id="contact" href="#">CONTACT</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+    <h2 class="builder">Character Builder</h2>
+    <p></p>
+    <form class="form" action="/character/add" method="post">
+        <!-- Nombre personaje -->
+        <label>Character Name: </label>
+        <input type="text" name="character_name" class="form-control" id="name" placeholder="Your Character Name"
+            required>
+        <div class="form-group">
+            <!-- alienamiento -->
+            <label>Alienation:</label>
+            <select class="selectpicker form-control" name="alienation" id="alin">
+                <option>Lawful Good</option>
+                <option>Neutral Good</option>
+                <option>Chaotic Good</option>
+                <option>Lawful Neutral</option>
+                <option>True Neutral</option>
+                <option>Chaotic Neutral</option>
+                <option>Lawful Evil</option>
+                <option>True Evil</option>
+                <option>Chaotic Evil</option>
+            </select>
+
+            <label>Gender:</label>
+            <select class="selectpicker form-control" name="gender" id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <!-- raza -->
+            <label>Race:</label>
+            <select class="selectpicker form-control" name="race" id="races">
+                <option>Human</option>
+                <option>Elf</option>
+                <option>Dwarf</option>
+                <option>Gnome</option>
+                <option>Halfling</option>
+                <option>Orc</option>
+                <option>Kobold</option>
+            </select>
+
+            <!-- class -->
+            <label>Class:</label>
+            <select class="selectpicker form-control" name="class" id="class">
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Warlock</option>
+                <option>Wizard</option>
+            </select>
+
+            <!-- level character -->
+            <label>Level: </label>
+            <input type="text" class="form-control" id="level" placeholder="Level" name="level" required>
+
+            <label>Image: </label>
+            <input type="text" name="image_character" class="form-control" id="image"
+                placeholder="Your Character Image URL" required>
+            <div class="form-group">
+
+                <!-- habilidades -->
+                <!-- <label for="level"> Strenght: </label>
+            <input type="level" class="form-control" id="str" placeholder="Level" name="lvl">
+            <label for="level"> Intelligence: </label>
+            <input type="level" class="form-control" id="int" placeholder="Level" name="lvl">
+            <label for="level"> Carism: </label>
+            <input type="level" class="form-control" id="car" placeholder="Level" name="lvl">
+            <label for="level"> Constitution: </label>
+            <input type="level" class="form-control" id="const" placeholder="Level" name="lvl"> -->
+            </div>
+            <button type="submit">Save</button>
+    </form>
+</div>
+
+
+
+<% include _footer %>

@@ -1,0 +1,140 @@
+body{
+    background-image: url("../img/bueno.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.website{
+    margin-top: 18px;
+}
+.titleweb{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px;
+}
+.menu {
+    position: absolute;
+    font-size: 20px;
+    z-index: 9999;
+    top: 0;
+    right: 3%;
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: inline-flex;
+    margin: 40px;
+}
+
+#home{
+    border: 1px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#home, #about, #universe, #contact {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#home:hover{
+    color: #5878B5;
+}
+
+#about:hover{
+    color: #5878B5;
+}
+
+#universe:hover{
+    color: #5878B5;
+} 
+
+#contact:hover{
+    color: #5878B5;
+    
+}
+
+#rolenation{
+    text-decoration: none;
+    color:white;
+}
+
+ #rolenation:hover{
+    color: #5878B5;
+ }
+
+.user-characters{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.characters-description{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.cardcharacter{
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 13px 20px 0 rgba(0,0,0,0.8);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .button {
+    background-color: white;
+    border: none;
+    color: #5878B5;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid #4A3C87;
+}
+.cardbody{
+    padding: 1%;
+    padding-bottom: 3%;
+    background: #EDDFEE;
+    font-family: 'Montserrat', sans-serif;
+}
+.button:hover {
+    background-color: #5878B5;
+    color: white;
+
+}
+.botones{
+    text-align: center;
+}
+.nombrepersonaje{
+    text-align: center;
+}
+.add_character{
+    height: 540px;
+    width: 370px;
+}
+.add-character-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    width: 50%;
+}

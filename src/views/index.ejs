@@ -1,0 +1,37 @@
+<% include _headerPrincipal %>
+
+
+
+    <div class="container-fluid">
+        <div class="website">
+            <span class="titleweb"><a id="rolenation" href="/">RoleNation</a></span>
+        </div>
+        <div class="nav">
+            <ul class="menu web-site">
+                <li><a id="home" href="/">HOME</a></li>
+                <li> <a id="about" href="#">ABOUT US</a></li>
+                <li> <a id="universe" href="/profile">ROLE UNIVERSE</a></li>
+                <li> <a id="contact" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="container total-body">
+            <h2 class="user-characters">Laura's Characters</h2>
+            <p class="characters-description">You need to create a character for each new adventure.</p>
+
+            <div class="row cards-row">
+
+                <!-- card que se genera     -->
+                <% include card %>
+
+                <!-- añadir nuevo personaje -->
+                <div class="add_character">
+                    <a href="/character"><img class="add-character-btn" src="img/add.png" alt="add image"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <% include _footerPrincipal %>
